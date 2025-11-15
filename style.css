@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    width: 540px;
+    background-color: #e2daff;
+    border: 1px solid #af99ff;
+    padding: 20px;
+}
+
+fieldset {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #af99ff;
+    background-color: #d2f2c8;
+    display:grid;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input, select, textarea {
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
+
+.gender input {
+    margin-left: 20px;
+}
+
+table, td, th {
+    padding: 2px 6px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
