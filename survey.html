@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Customer Feedback Survey</h1>
+
+    <!-- Description Paragraph -->
+    <p>Please take a moment to complete the survey below.</p>
+
+    <!-- Form to collect survey response -->
+    <form action="#" method="post" target="_self">
+        <fieldset>
+            <legend>User's Personal Information:</legend>
+
+            <!-- To get username from the user -->
+            <label for="username">Enter Your Name:</label>
+            <input type="text" name="username" id="username" autocomplete="username" placeholder="Jofra Archer" required>
+
+            <!-- To get email address from the user -->
+            <label for="email">Enter Email Address:</label>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="jofra@archer.com" required>
+
+            <!-- To get password from the user -->
+            <label for="password">Enter Your Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <!-- To get confirm password from the user -->
+            <label for="confirm-password">Confirm Your Password:</label>
+            <input type="password" name="confirm-password" id="confirm-password" required>
+            
+            <!-- To get gender detail from the user -->
+            <div class="gender">
+                <div>Gender:</div>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- To get exact age number of the user -->
+            <label for="age">Enter Your Age:</label>
+            <input type="number" name="age" id="age" min="18" max="60" step="2" required>
+
+            <!-- To get date of birth of the user -->
+            <label for="dob">Enter Your DOB:</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <!-- To know about the favourite color of the user -->
+            <label for="color">Favourite Color:</label>
+            <select name="color" id="color" required>
+                <option value="Red">Red</option><hr>
+                <option value="Blue" selected>Blue</option><hr>
+                <option value="Green">Green</option><hr>
+                <option value="Yellow">Yellow</option>
+            </select>
+
+            <!-- To get the feedback from the user -->
+            <label for="feedback">Enter Your Feedback:</label>
+            <textarea name="feedback" id="feedback" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <!-- Some intructions to fill the form correctly -->
+    <h3>Instructions:</h3>
+    <ul style="list-style-type: square;">
+        <li>Fill in your name and email address in the first two fields.</li>
+        <li>Get confirm your password in the next two fields.</li>
+        <li>Choose your gender wisely.</li>
+        <li>Enter your age and DOB details.</li>
+        <li>Select your favorite color from the dropdown list.</li>
+        <li>Provide your feedback in the text box below.</li>
+        <li>Click the "Submit" button to submit your responses.</li>
+    </ul>
+
+    <!-- Survey Response will be displayed in a table below -->
+    <h2>Survey Responses:</h2>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Email Address</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>DOB</th>
+            <th>Favorite Color</th>
+            <th>Feedback</th>
+        </tr>
+        <tr>
+            <td>Anand Rathi</td>
+            <td>anand@rathi.com</td>
+            <td>Male</td>
+            <td>34</td>
+            <td>30-06-1991</td>
+            <td>Blue</td>
+            <td>Great Service! Keep it up.</td>
+        </tr>
+        <tr>
+            <td>Sonalika Bhide</td>
+            <td>sonalika@bhide.com</td>
+            <td>Female</td>
+            <td>22</td>
+            <td>20-04-2003</td>
+            <td>Green</td>
+            <td>Great Platform for self-paced learning.</td>
+        </tr>
+        <tr>
+            <td>Tipendra Gada</td>
+            <td>tipendra@gada.com</td>
+            <td>Male</td>
+            <td>24</td>
+            <td>25-03-2001</td>
+            <td>Red</td>
+            <td>Would love to see more options.</td>
+        </tr>
+    </table>
+    
+    <p><strong>Notes:</strong> The above table represents the response from the users during the survey in a structured and well organized way.</p>
+</body>
+</html>
